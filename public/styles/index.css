@@ -1,0 +1,74 @@
+main {
+    width: 95%;
+    max-width: 50rem;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  main h1 {
+    margin-top: 7rem;
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    color:#D5B4B4;
+  }
+  h2{
+    color: #564646;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+  }
+  
+  main ul {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 0;
+    display: flex;
+    margin-left: 2rem;
+  }
+  
+  main li {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 6px;
+   
+    margin: 0 1rem;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 2px 7px 8px rgb(109, 93, 93);
+    border: 2px  solid rgb(92, 79, 79);
+  }
+  
+  main li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #c0a6a6;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #F5EBEB;
+    font-size: 1.4rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+  }
+  
+  main li a:hover,
+  main li a:active {
+    color: rgb(251, 250, 250);
+    background-image:url("./8_Types_of_Plates_for_Every_Dining_Table.webp");
+    scale: 1.1;
+    background-position: center;
+    background-size: cover;
+    background-image: image-set(cover);
+    
+  }
+
+  #share a:hover{
+    color:rgb(38, 8, 8);
+    background-image:url("./review.jpg");
+    scale: 1;
+    background-position: center;
+    background-size: cover;
+    background-image: image-set(cover);
+    
+
+  }

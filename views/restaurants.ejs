@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/restaurants.css" />
+  </head>
+  <body>
+    <%- include('includes/header') %>
+    <%- include('includes/sideAside') %>
+    <main>
+      <h1>Recommended Restaurants</h1>
+      <% if(numberofrestaurants==0){ %>
+       <p>There is some issue in our server,We will get back to you soon with new and better recommendations.</p>
+       <%} else { %>
+        <p>Find your next favorite restaurants with help of our other users!</p>
+        <p>We found <%=numberofrestaurants %> restaurants.</p>
+        <form action="/restaurants" method="GET">
+          <input type="hidden" value="<%=curOrder%>" name="order">
+        <button class="btn">Change Order</button>
+      </form>
+        <ul id="restaurants-list">
+        <%  for (const restaurant of restaurants){ %>
+          <%- include('includes/restaurants/restaurant-item',{restaurant: restaurant}) %>
+        <% } %>
+        </ul>
+        <%}%>
+     
+    </main>
+  </body>
+</html>
